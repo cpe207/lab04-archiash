@@ -1,5 +1,7 @@
 function primeNumber(a) {
-  /* Your code here */
+  if(a % 2 == 0) return a == 2 && a % 2 == 0;
+  for(let i = 3; i * i <= a; i += 2) if(a % i == 0) return false;  
+  return true;
 }
 
 const d1 = 10;
